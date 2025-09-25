@@ -1,0 +1,6 @@
+2025-09-11 02:20:29.330893+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]PHOTO"; expected "PREPARE"; SQL statement:
+PHOTO [42001-232]
+2025-09-17 22:21:01.150626+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]ACCOUNT"; expected "ALTER, ANALYZE"; SQL statement:
+ACCOUNT [42001-232]
