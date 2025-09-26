@@ -1,190 +1,134 @@
-# Mantis Free React Material UI Dashboard Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Mantis%20Free%20React%20-%20The%20Most%20Beautiful%20Material-UI%20Designed%20Admin%20Dashboard%20Template%20&url=https://mantisdashboard.com/free&via=codedthemes&hashtags=react,materialui,nextjs,webdev,developers,typescript)
+# Picbloom
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/mantis-free-react-admin-template/blob/master/LICENSE)
-[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/mantis-free-react-admin-template)](https://github.com/codedthemes/mantis-free-react-admin-template/)
-[![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue?style=flat-square&logo=github)](https://codedthemes.com/item/mantis-free-mui-admin-template/)
-[![Join Discord](https://img.shields.io/badge/Join-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/p2E2WhCb6s)
+Picbloom is a modern, responsive, and user-friendly photo gallery and album management web application built with **React**, **Material UI**, and **Vite**. It allows users to register, login, create albums, upload photos, and manage them easily.
 
-Mantis is a free and open source React dashboard template made using the Material UI React component library with aim of flexibility and better customizability.
+---
 
-### Name Derived From Nature
+## Table of Contents
 
-Mantis Logo is inspired from the insect name - 'Mantises' as they have triangular heads with flexible Necks. Also, the name is derived from two popular UI frameworks, Material UI and Ant Design (M-Ant-is).
+* [Features](#features)
+* [Tech Stack](#tech-stack)
+* [Getting Started](#getting-started)
+* [Available Scripts](#available-scripts)
+* [Folder Structure](#folder-structure)
+* [Build for Production](#build-for-production)
+* [License](#license)
 
-Mantis has Ant Design principal on top of the Material UI React component library.
+---
 
-✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine
+## Features
 
-![mantis-free-react-dashboard-template.jpg](https://org-public-assets.s3.us-west-2.amazonaws.com/Free-Version-Banners/GITHUB-FREE-REACT-REPO+-+Mantis.png)
+* User registration and login
+* Album creation, editing, and deletion
+* Photo upload, edit, and delete
+* Responsive Material UI design
+* State management with React Context API
+* Client-server communication using Axios
 
-## Table of contents
+---
 
-- [Getting Started](#getting-started)
-- [Download](#download)
-- [Why Mantis?](#why-mantis)
-- [What's included in Premium Version?](#whats-included-in-premium-version)
-- [Documentation](#documentation)
-- [Browser support](#browser-support)
-- [Technology Stack](#technology-stack)
-- [Mantis Figma UI Kit](#mantis-figma-ui-kit)
-- [Other Technologies](#other-technologies)
-- 💰[Save more with Big Bundle](#save-more-with-big-bundle)💰
-- [More React Dashboard Templates](#more-react-dashboard-templates)
-- [Issues?](#issues)
-- [License](#license)
-- [Contributor](#contributor)
-- [Useful Resources](#useful-resources)
-- [Community](#community)
-- [Follow us](#follow-us)
+## Tech Stack
+
+* **Frontend:** React, Material UI, Vite
+* **State Management:** React Context API
+* **Routing:** React Router DOM
+* **HTTP Client:** Axios
+* **Build Tool:** Vite
+
+---
 
 ## Getting Started
 
-1. Clone from Github
+### Prerequisites
 
-```
-git clone https://github.com/codedthemes/mantis-free-react-admin-template.git
-```
+* Node.js v18+
+* npm or yarn
+* Backend API running (if needed for full functionality)
 
-2. Install packages
+### Installation
 
-```
-yarn
-```
+1. Clone the repository:
 
-3. Run project
-
-```
-yarn run start
+```bash
+git clone <your-picbloom-repo-url>
+cd picbloom/frontend
 ```
 
-## Download
+2. Install dependencies:
 
-- Mantis Free
-  - [Live Preview](https://mantisdashboard.com/free/)
-  - [Download](https://codedthemes.com/item/mantis-free-mui-admin-template/)
-- Mantis Pro
-  - [Live Preview](https://mantisdashboard.com/)
-  - [Download](https://codedthemes.com/item/mantis-mui-react-dashboard-template/)
+```bash
+npm install --legacy-peer-deps
+```
 
-## Why Mantis?
+3. Start the development server:
 
-Mantis offers everything needed to build an advanced dashboard application. In the initial release, we included following high-end features,
+```bash
+npm run start
+```
 
-- Support React19.
-- Professional user interface.
-- Material UI React components(MUI v7).
-- Fully responsive, all modern browser supported.
-- Easy to use code structure
-- Flexible & high-Performance code
-- Simple documentation
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## What's included in Premium Version?
+---
 
-The [Pro version](https://mantisdashboard.com/) of Mantis react template includes features such as TypeScript, apps, authentication methods (i.e. JWT, Auth0, Firebase, AWS, Supabase), advance components, form plugins, layouts, widgets, and more.
+## Available Scripts
 
-| [Mantis Free](https://mantisdashboard.com/free/)                                                     | [Mantis](https://mantisdashboard.com/)                                            |
-| ---------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
-| **7** Demo pages                                                                                     | **85+** demo pages                                                                |
-| -                                                                                                    | ✓ Multi-language                                                                  |
-| -                                                                                                    | ✓ Dark/Light Mode 🌓                                                              |
-| -                                                                                                    | ✓ TypeScript version                                                              |
-| -                                                                                                    | ✓ Design files (Figma)                                                            |
-| -                                                                                                    | ✓ Multiple color options                                                          |
-| -                                                                                                    | ✓ RTL                                                                             |
-| -                                                                                                    | ✓ JWT authentications                                                             |
-| -                                                                                                    | ✓ [More components](https://mantisdashboard.com/components-overview/autocomplete) |
-| ✓ [MIT License](https://github.com/codedthemes/mantis-free-react-admin-template/blob/master/LICENSE) | ✓ [Pro License](https://mui.com/store/license/)                                   |
+In the project directory, you can run:
 
-## Documentation
+* `npm run start` – Runs the app in development mode
+* `npm run build` – Builds the app for production in the `dist/` folder
+* `npm run preview` – Preview the production build locally
 
-[Mantis documentation](https://codedthemes.gitbook.io/mantis) helps you out in all aspects from Installation to deployment.
+---
 
-## Browser support
+## Folder Structure
 
-<img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/chrome.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/edge.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/safari.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/firefox.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/opera.png" width="45" height="45" >
+```
+frontend/
+│
+├── src/                   # Source code
+│   ├── api/               # API client functions
+│   ├── assets/            # Images, fonts, icons
+│   ├── components/        # Reusable UI components
+│   ├── contexts/          # React Context API for state management
+│   ├── hooks/             # Custom React hooks
+│   ├── layout/            # Layout components (Header, Footer, Sidebar)
+│   ├── pages/             # Application pages
+│   ├── routes/            # Route definitions
+│   └── utils/             # Utility functions
+│
+├── public/                # Public assets
+├── package.json
+├── vite.config.mjs
+└── README.md
+```
 
-## Technology Stack
+---
 
-- Material UI V7
-- Built with React Hooks API.
-- React context API for state management.
-- SWR.
-- React Router for navigation routing.
-- Support for Vite.
-- Code splitting.
-- CSS-in-JS.
+## Build for Production
 
-## Mantis Figma UI Kit
+1. Build the project:
 
-| FREE                                                                                                                        | PRO                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Figma_Free_Mantis.png" width="450" alt="Figma Free"> | <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Figma_Pro_Mantis.png" width="450" alt="Figma Pro"> |
+```bash
+npm run build
+```
 
-## Other Technologies
+2. Serve the production build locally for testing:
 
-| Technology                                                                                                                        | Free                                                                               | Pro                                                                       |
-| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Angular.png" width="25" height="25"></p>   | [**Free**](https://codedthemes.com/item/mantis-angular-free-admin-template/)       | [**Pro**](https://codedthemes.com/item/mantis-angular-admin-template/)    |
-| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Bootstrap.png" width="30" height="30"></p> | [**Free**](https://codedthemes.com/item/mantis-bootstrap-free-admin-template/)     | [**Pro**](https://codedthemes.com/item/mantis-bootstrap-admin-dashboard/) |
-| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Vue.png" width="25" height="25"></p>       | [**Free**](https://codedthemes.com/item/mantis-free-vuetify-vuejs-admin-template/) | [**Pro**](https://codedthemes.com/item/mantis-vue-admin-template/)        |
+```bash
+npm install -g serve
+serve -s dist
+```
 
-## Save more with Big Bundle
+3. Upload the contents of the `dist/` folder to your hosting platform (Netlify, Vercel, AWS S3, etc.)
 
-[![bundle-image](https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Bundle+banner.png)](https://links.codedthemes.com/jhFBJ)
-
-## More React Dashboard Templates
-
-| Dashboard                                                                                                                                                          | FREE                                                                                | PRO                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Berry%20with%20name.png"  height="30" style="display:inline-block; vertical-align:middle;">   | [**Free**](https://codedthemes.com/item/berry-mui-free-react-admin-template/)       | [**Pro**](https://codedthemes.com/item/berry-material-react-admin-template/)</span>   |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Datta%20with%20name.png" height="30" style="display:inline-block; vertical-align:middle;">    | [**Free**](https://codedthemes.com/item/datta-able-react-free-admin-template/)      | [**Pro**](https://codedthemes.com/item/datta-able-react-admin-template/)</span>       |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Gradient%20with%20name.png" height="30" style="display:inline-block; vertical-align:middle;"> | [**Free**](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template/) | [**Pro**](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/)</span> |
-
-## Issues
-
-Please generate a [Github issue](https://github.com/codedthemes/mantis-free-react-admin-template/issues) if you found a bug in any version. We are try our best to resolve the issue.
+---
 
 ## License
 
-- Licensed under [MIT](https://github.com/codedthemes/mantis-free-react-admin-template/blob/master/LICENSE)
-- Copyright © [CodedThemes](https://codedthemes.com/)
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
-## Contributor
+---
 
-**CodedThemes Team**
+## Author
 
-- https://x.com/codedthemes
-- https://github.com/codedthemes
-
-**Rakesh Nakrani**
-
-- https://x.com/rakesh_nakrani
-
-**Brijesh Dobariya**
-
-- https://x.com/dobaria_brijesh
-
-## Useful Resources
-
-- [More Admin Templates From CodedThemes](https://codedthemes.com/item/category/admin-templates/)
-- [Freebies From CodedThemes](https://codedthemes.com/item/category/free-templates/)
-- [Big Bundles](https://codedthemes.com/item/big-bundle/)
-- [Figma UI Kits](https://codedthemes.com/item/category/templates/figma/)
-- [Affiliate Program](https://codedthemes.com/affiliate/)
-- [Blogs](https://blog.codedthemes.com/)
-
-## Community
-
-- 👥Follow [@codedThemes](https://x.com/codedthemes)
-- 🔗Join [Discord](https://discord.com/invite/p2E2WhCb6s)
-- 🔔Subscribe to [CodedTheme Blogs](https://blog.codedthemes.com/)
-
-## Follow Us
-
-- [Twitter](https://twitter.com/codedthemes) 🐦
-- [Dribbble](https://dribbble.com/codedthemes) 🏀
-- [Github](https://github.com/codedthemes) 🐙
-- [LinkedIn](https://www.linkedin.com/company/codedthemes/) 💼
-- [Instagram](https://www.instagram.com/codedthemes/) 📷
-- [Facebook](https://www.facebook.com/codedthemes) 🟦
+**Pankaj Sapkal**

@@ -1,0 +1,1 @@
+{"version":3,"file":"Logout-BW86wyKN.js","sources":["../../src/pages/auth/Logout.jsx"],"sourcesContent":["\nconst Logout = () =>{\n    localStorage.removeItem('token');\n    window.location.href = '/login';\n};\n\nexport default Logout;"],"names":["Logout"],"mappings":"AACA,MAAMA,EAAS,IAAK,CAChB,aAAa,WAAW,OAAO,EAC/B,OAAO,SAAS,KAAO,QAC3B"}

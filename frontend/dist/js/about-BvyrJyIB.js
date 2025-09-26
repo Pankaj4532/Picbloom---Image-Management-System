@@ -1,0 +1,2 @@
+import{j as e,M as a,T as s}from"./index-8HAMVEHB.js";const r=()=>e.jsx(a,{title:"About Picbloom",children:e.jsx(s,{variant:"body2",children:"Picbloom is a full-stack gallery application that enables users to upload, organize, and manage photos securely. It features user authentication, role-based access, and a Spring Boot + PostgreSQL backend with RESTful APIs documented using Swagger. The frontend is responsive and user-friendly, ensuring a smooth experience across devices."})});export{r as default};
+//# sourceMappingURL=about-BvyrJyIB.js.map
